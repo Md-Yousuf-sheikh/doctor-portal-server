@@ -85,7 +85,6 @@ async function run() {
             const result = await usersCollection.updateOne(filter, updateDoc, options);
             res.json(result)
         })
-
         // Admin user PUT
         app.put('/users/admin', async (req, res) => {
             const user = req.body;
